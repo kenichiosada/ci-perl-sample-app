@@ -4,7 +4,12 @@ use Dancer ':syntax';
 our $VERSION = '0.1';
 
 get '/' => sub {
-    template 'index';
+    return 1;
 };
+
+get '/test' => sub {
+    return 1;
+};
+
 
 true;
