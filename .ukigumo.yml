@@ -1,0 +1,6 @@
+before_install: 
+  - carton install --deployment --cached
+
+script: 
+  - cd App && carton exec prove -lr -Ilib t
+
